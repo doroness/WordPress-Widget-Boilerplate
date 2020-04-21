@@ -36,8 +36,16 @@
         "phpmd/phpmd": "^v2.6.0",
         "nikic/php-parser": "^4.0",
         "ocramius/proxy-manager": "^2.0.0",
-        "phpro/grumphp": "^0.16.2"
+        "phpro/grumphp": "^0.13.1"
     },
+    "autoload": {
+        "psr-4": {
+          "WordPressWidgetBoilerplate\\": "src/",
+          "WordPressWidgetBoilerplate\\Utilities\\": "src/Utilities/",
+          "WordPressWidgetBoilerplate\\Subscriber\\": "src/Subscriber/",
+          "WordPressWidgetBoilerplate\\WordPress\\": "src/WordPress/"
+        }
+      },
     "scripts": {
       "test": [
         "./vendor/bin/grumphp run"
